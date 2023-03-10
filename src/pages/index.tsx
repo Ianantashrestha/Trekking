@@ -1,8 +1,11 @@
-import { Hanken_Grotesk } from "next/font/google";
+import { Header } from "@app/components";
 import styles from "@app/styles/Home.module.css";
-import { Document } from "@app/system";
-const inter = Hanken_Grotesk({ subsets: ["latin"] });
+import { Document, Container, Row, Column, Paragraph } from "@app/system";
 
 export default function Home() {
-  return <Document></Document>;
+  return (
+    <Document title="Home">
+      <Header />
+    </Document>
+  );
 }
