@@ -24,7 +24,7 @@ const Nav = () => {
     },
   ];
   return (
-    <Row columnGap={40}>
+    <Row columnGap={30}>
       {links?.map((link) => {
         return (
           <Link key={link?.title} href={link?.to}>

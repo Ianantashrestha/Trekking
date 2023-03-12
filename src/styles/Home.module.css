@@ -1,0 +1,9 @@
+
+.headerWrapper{
+    border-bottom:1px solid var(--greyWhite);
+    border-top:1px solid var(--greyWhite);
+
+}
+.fullImage{
+    width:100%;
+}

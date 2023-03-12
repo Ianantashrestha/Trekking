@@ -7,6 +7,8 @@ interface RowProps {
   margin?: string;
   padding?: string;
   columnGap?: number;
+  className?: string;
+  background?: string;
 }
 interface StyleRowProps {
   alignItems?: string;
@@ -14,6 +16,7 @@ interface StyleRowProps {
   margin?: string;
   padding?: string;
   columnGap?: number;
+  background?: string;
 }
 
 const StyleRow = styled.div<StyleRowProps>`
@@ -24,6 +27,8 @@ const StyleRow = styled.div<StyleRowProps>`
   margin: ${(props) => props?.margin || "0px"};
   padding: ${(props) => props?.padding || "0px"};
   column-gap: ${(props) => props?.columnGap || 0}px;
+  background: ${(props) =>
+    props?.background ? `var(${props.background})` : `none`};
 `;
 const Row = ({ children, ...restProps }: RowProps) => {
   return <StyleRow {...restProps}>{children}</StyleRow>;

@@ -7,7 +7,7 @@ interface StyleContainerProps {}
 const StyleContainer = styled.div<StyleContainerProps>`
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 85%;
   margin: 0px auto;
 `;
 const Container = ({ children }: ContainerProps) => {

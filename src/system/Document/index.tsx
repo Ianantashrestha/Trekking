@@ -21,7 +21,7 @@ export default function document({
         <link rel="icon" href="/favicon.ico" />
         {links && links}
       </Head>
-      <main>{children}</main>
+      {children}
     </>
   );
 }
