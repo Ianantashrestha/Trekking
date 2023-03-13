@@ -11,11 +11,13 @@ interface FlexProps {
   columnGap?: number;
   rowGap?: number;
   justifyContent?: "space-between" | "center" | "initial" | "inherit";
+  padding?: string;
 }
 interface FlexContainerProps {
   columnGap?: number;
   rowGap?: number;
   justifyContent?: "space-between" | "center" | "initial" | "inherit";
+  padding?: string;
 }
 
 const StyleFlexContainer = styled.div<FlexContainerProps>`
@@ -24,6 +26,7 @@ const StyleFlexContainer = styled.div<FlexContainerProps>`
   column-gap: ${(props) => props.columnGap || 0}px;
   row-gap: ${(props) => props.rowGap || 0}px;
   justify-content: ${(props) => props?.justifyContent || "space-between"};
+  padding: ${(props) => props.padding || "0px"};
 `;
 const StyleFlexItem = styled.div<FlexProps>`
   width: ${(props) => (props?.lg / 12) * 100}%;
