@@ -1,4 +1,10 @@
-import { Header, Banner, TopDestination, Testimonial } from "@app/components";
+import {
+  Header,
+  Banner,
+  TopDestination,
+  Testimonial,
+  Footer,
+} from "@app/components";
 
 import { Document } from "@app/system";
 
@@ -9,6 +15,7 @@ export default function Home() {
       <Banner />
       <TopDestination />
       <Testimonial />
+      <Footer />
     </Document>
   );
 }

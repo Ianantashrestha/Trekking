@@ -7,6 +7,9 @@ import List from "./List";
 import Heading from "./Heading";
 import Grid from "./Grid";
 import Button from "./Button";
+import Card from "./Card";
+import Line from "./Line";
+import Flex from "./Flex";
 export {
   Document,
   Container,
@@ -17,4 +20,7 @@ export {
   Heading,
   Grid,
   Button,
+  Card,
+  Line,
+  Flex,
 };

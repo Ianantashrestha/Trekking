@@ -8,6 +8,8 @@
   --f5f5f5:#F5F5F5;
   --greyBlack:#4D4D4D;
   --testimonialBg:rgba(192, 97, 27, 0.1);
+  --footerTextColor:rgba(255, 255, 255, 0.75)
+  
   --xxsMP:5px;
   --xsMP:10px;
   --smMP:15px;
@@ -21,6 +23,7 @@
   --fontSm:16px;
   --fontMd:18px;
   --fontLg:20px;
+  --fontMdLg:24px;
   --fontLlg:40px;
   --fontExl:60px
 
